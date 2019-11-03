@@ -24,5 +24,8 @@ class PetFriendly::Cli
     end  
     
     def user_select
+      puts " "
+      puts "Please select a category. "
+      puts "For exemple if you want 'Hotels', type '1' "
     
 end

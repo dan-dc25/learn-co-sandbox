@@ -8,6 +8,7 @@ class PetFriendly::Cli
   end
   
   def welcome
+<<<<<<< HEAD
     puts " "
     puts "Welcome to Pet Friendly."
     puts " "
@@ -27,5 +28,20 @@ class PetFriendly::Cli
       puts " "
       puts "Please select a category. "
       puts "For exemple if you want 'Hotels', type '1' "
+=======
+    puts ""
+    puts "Welcome to Pet Friendly."
+    puts ""
+    puts "Where would you like to take your furry friend?"
+  end
+  
+  def choose_category
+    puts ""
+    puts "Choose a category to proceed. "
+    puts ""
+    get_category
+    puts ""
+    
+>>>>>>> 1d254c006d2ee70b487aff0e6a9de25000a47305
     
 end

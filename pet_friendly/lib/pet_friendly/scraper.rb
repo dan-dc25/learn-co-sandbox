@@ -9,12 +9,17 @@ class PetFriendly::Scraper
   end 
   
   def get_page
+<<<<<<< HEAD
     page = Nokogiri::HTML(open("https://bringfido.com"))
+=======
+    page = Nokogiri::HTML(open(url))
+>>>>>>> 1d254c006d2ee70b487aff0e6a9de25000a47305
     page
     binding.pry 
   end 
   
   def get_category
+<<<<<<< HEAD
     page = self.get_page.css(".item")
     page.each do |category|
       category_name = category.css(".label").text
@@ -22,6 +27,10 @@ class PetFriendly::Scraper
     end
   end
       
+=======
+    page = get_page("https://bringfido.com")
+    self.get_page.css(".item")
+>>>>>>> 1d254c006d2ee70b487aff0e6a9de25000a47305
   end
   
   def show_category
